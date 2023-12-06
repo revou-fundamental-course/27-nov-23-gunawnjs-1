@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segetiga</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <header style="padding: 12px;">
+            <div class="wrappper">
+                <h1 style="text-align: center; margin-bottom: 12px;">Welcome to Katik</h1>
+                <p style="text-align: center;">Hai Sobat Selamat Datang di Katik.</p>
+                <p style="text-align: center;">Sebuah web apps sederhana untuk menghitung nilai luas dan keliling bangun datar.</p>
+            </div>
+            <button style="text-transform: capitalize; background: #2780b8; color: #fff;">segitiga</button>
+            <button style="text-transform: capitalize; color: #2780b8;">jajargenjang</button>
+        </header>
+        <main>
+            <div id="luasSegitiga" style="background: #fff; margin: 12px 0; border-radius: 5px; box-shadow: 0 0 5px #979797;" class="container">
+                <div class="heading">
+                    <h1 style="text-transform: capitalize; text-align: center; background: #2780b8; color: #fff; padding: 12px 0;">luas segitiga</h1>
+                </div>
+                <div class="container" style="padding: 12px;">
+                    <div class="wrapper" style="display: flex; justify-content: center;">
+                        <img src="./images.png" alt="rumus-luas-segitiga">
+                    </div>
+                    <p style="text-transform: capitalize;">rumus luas segitiga yaitu:</p>
+                    <p style="font-weight: bold; text-align: center;">L = 1/2 x a x t</p>
+                    <div class="wrapper" style="margin-bottom: 12px;">
+                        <p>Di mana:</p>
+                        <p>L = Luas</p>
+                        <p>a = panjang alas</p>
+                        <p>t = Tinggi</p>
+                    </div>
+                    <hr style="margin: 1rem 0;">
+                    <h1 style="text-transform: capitalize; text-align: center;">hitung luas segitiga</h1>
+                    <input id="alas" type="text" placeholder="Alas">        
+                    <input id="tinggi" type="text" placeholder="Tinggi">
+                    <div id="dijawabLuas" class="wrapper" style="margin: 12px 4px;">
+                        
+                    </div> 
+                    <button onclick="hitungLuas()" style="background-color: #2780b8; color: #fff;">Hitung</button>
+                    <button onclick="resetLuasBtn()" style="background-color: orange; color: #fff;">Reset</button>
+                </div>
+            </div>
+            <div id="kelilingSegitiga" style="background: #fff; margin: 12px 0; border-radius: 5px; box-shadow: 0 0 5px #979797;" class="container">
+                <div class="heading">
+                    <h1 style="text-transform: capitalize; text-align: center; background: #2780b8; color: #fff; padding: 12px 0;">keliling segitiga</h1>
+                </div>
+                <div class="container" style="padding: 12px;">
+                    <div class="wrapper" style="display: flex; justify-content: center;">
+                        <img src="./images.png" alt="rumus-luas-segitiga">
+                    </div>
+                    <p style="text-transform: capitalize;">rumus keliling segitiga yaitu:</p>
+                    <p style="font-weight: bold; text-align: center; text-transform: uppercase; margin: 1rem 0;">k = s1 + s2 + s3</p>
+                    <div class="wrapper" style="margin-bottom: 12px;">
+                        <p>Di mana:</p>
+                        <p>K = Keliling</p>
+                        <p>S1 = Sisi A</p>
+                        <p>S2 = Sisi B</p>
+                        <p>S3 = Sisi C</p>
+                    </div>
+                    <hr style="margin: 1rem 0;">
+                    <h1 style="text-transform: capitalize; text-align: center;">hitung keliling segitiga</h1>
+                    <input id="sisiA" type="text" placeholder="Sisi A">        
+                    <input id="sisiB" type="text" placeholder="Sisi B">
+                    <input id="sisiC" type="text" placeholder="Sisi C">
+                    <div id="dijawabKeliling" class="wrapper" style="margin: 12px 4px;">
+                        
+                    </div> 
+                    <button onclick="hitungKeliling()" style="background-color: #2780b8; color: #fff;">Hitung</button>
+                    <button onclick="resetKelBtn()" style="background-color: orange; color: #fff;">Reset</button>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
